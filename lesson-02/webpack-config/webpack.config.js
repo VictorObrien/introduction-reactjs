@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundler.js'
   },
+
   module: {
     rules: [
       {
@@ -17,8 +18,9 @@ module.exports = {
           loader: "babel-loader"
         }
       }
-    ]
+    ]  
   },
+
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
